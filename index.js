@@ -19,8 +19,8 @@ var getGPU = () => {
     }
     name = s.exec(cmd)
     name = name.split('\r')
-    for(let i in name) {
-        if(name[i].indexOf('NVIDIA') !== - 1 || name[i].indexOf('AMD') !== -1) {
+    for (let i in name) {
+        if (name[i].indexOf('NVIDIA') !== -1 || name[i].indexOf('AMD') !== -1) {
             name = name[i]
             console.log(name[i])
             name = name.split('\n')
