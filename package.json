@@ -8,5 +8,9 @@
   },
   "keywords": [],
   "author": "Daksh Miglani <hello@dak.sh> (https://dak.sh)",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "cpu-stats": "^1.0.0",
+    "express": "^4.15.3"
+  }
 }
