@@ -2,7 +2,8 @@ var express = require('express'),
     app = express(),
     cpu = require('cpu-stats'),
     os = require('os'),
-    s = require('shelljs')
+    s = require('shelljs'),
+    config = require(__dirname + '/config.js')
 
 var getGPU = () => {
     let cmd = '';
@@ -65,4 +66,4 @@ app.get('/', (req, res) => {
 })
 
 
-app.listen(3000)
+app.listen(config.port)
